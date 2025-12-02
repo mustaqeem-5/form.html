@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="Dashboard.css">
+    <style>
+        /* Responsive */
+        @media (max-width: 425px) and (min-width: 320px) {
+        .nav-bar{
+            gap: 10px;
+        }
+        .side-bar{
+            width: 100px;
+            text-align: center;
+            height: 382px;
+            padding: 8px;
+        }
+        .side-bar h3{
+            font-size: medium;
+        }
+        .content h1{
+            font-size: large;
+            text-align: center;
+        }
+        .content p{
+            text-align: center;
+        }
+        }
+        body{
+            width: 100%;
+            display: inline-block;
+        }
+        .all-work{
+            max-width: 1370px;
+            margin: 0 ;
+        }
+    </style>   
+</head>
+<body>
+    <div class="all-work">
+        <header>
+            <div class="nav-bar">
+                <button id="toggleSidebar" class="toggle-btn">☰</button>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">News</a>
+                <a href="#">Contact</a>
+            </div>
+        </header>
+
+        <div class="main-wrapper">
+            <aside class="side-bar" id="sidebar">
+                <h3>Dashboard</h3>
+                <a href="#">Overview</a>
+                <a href="#">Analytics</a>
+                <a href="#">Settings</a>
+                <a href="#">Profile</a>
+                <a href="#">Logout</a>
+            </aside>
+
+            <main class="content">
+                <h1>Welcome to My Dashboard</h1>
+                 <p>This is my DashBoard.</p>
+            </main>
+        </div>
+
+        <footer class="footer">
+            <p> &copy; 2025 My Dashboard. All rights reserved.</p>
+        </footer>
+
+        <script>
+            const toggleBtn = document.getElementById('toggleSidebar');
+            const sidebar = document.getElementById('sidebar');
+
+            toggleBtn.addEventListener('click', () => {
+                sidebar.classList.toggle('closed');
+            });
+        </script>
+    </div>    
+</body>
+</html>

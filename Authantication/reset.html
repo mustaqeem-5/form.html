@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="poppins.zip">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        /* Responsive */
+        @media (max-width: 425px) and (min-width: 320px) {
+            .display{
+                display: flex;
+                flex-direction: column;
+            }
+            .left img{
+                width: 100%;
+                height: 350px;
+            }
+            .img-text{
+                padding: 50px 20px;
+            }
+            .left .asterisks {
+                font-size: medium;
+            }
+            .img-text h1{
+                font-size: xx-large;
+            }
+            .copy{
+                padding-top: 60px;
+            }
+            .sale{
+                padding: 0 0;
+                text-align: center;
+                margin: 0;
+            }
+            .welcome{
+                padding: 30px 0;
+                text-align: center;
+                margin: 0;
+            }
+            .account{
+                padding: 0;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .forget{
+                padding: 0;
+            }
+           
+            .right{
+                padding: 50px 30px;
+                margin: 0;
+                text-align: center;
+            }
+            .res-copy{
+                margin: 0;
+                text-align: center;
+            }
+
+        }
+        @media (min-width: 426px) {
+                .res-copy{
+                    display: none;
+                }
+        }
+        @media (max-width: 425px) and (min-width: 320px) {
+            .copy {
+                display: none;
+            }
+        }
+        body{
+           width: 99.9%;
+           display: inline-block;
+    
+        }
+        .display{
+           max-width: 1350px ;
+           margin: 0 ;
+        }
+    </style>
+</head>
+<body>
+    <div class="display">
+        <div class="left text-black">
+              <div class="image-layer">
+              </div>
+            <div class="img-text text-black">
+               <span class="asterisks font-size-1 t"> <i class="fa-solid fa-asterisk"></i> </span>
+                <h1 class="font-size-1">Hello</h1>
+                <h1 class="font-size-3 my-4">SaleSkip!<i class="fa-solid fa-hand"></i></h1>
+                <p>
+                    Skip repetitive and manual sales-marketing tasks. Get highly productive through automation and save tons of time!
+                </p>
+                <p class="copy color-white">
+                   &copy; 2022 SaleSkip. All rights reserved.
+                </p>
+            </div>
+
+        </div>
+    
+        <div class="right">
+            <h1 class="sale m">
+               SaleSkip
+            </h1>
+            <h1 class="welcome">
+                Welcome Back!
+            </h1>
+            <p class="account text-grey mb-5">
+                Don't Have an account? 
+                <a href="Sign-in.html" class="text-black">Create new account now,</a><br>
+                It's FREE Takes less than a minute.
+            </p>
+             <form>
+                <input type="password" class="text-black" placeholder="New Password">
+
+                <input type="text" placeholder="Re-type New Password">
+
+                <button class=" black-bg color-white btn-3">Reset</button>
+                
+             </form>
+            <!-- <p class="pt-4 pl-7 text-grey font-weight-4 forget">
+                Forget Password 
+                <span class="text-black brd"><u>click Here</u></span>
+            </p> -->
+        </div>
+        <p class="res-copy color-white">
+               &copy; 2022 SaleSkip. All rights reserved.
+        </p>
+    </div>
+</body>
+</html>
